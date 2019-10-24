@@ -1,0 +1,59 @@
+.container {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  border-radius: 10px;
+  width: 50%;
+  padding: 30px;
+  margin: 30px auto;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 50%);
+}
+
+.location-search {
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.sun-bridge {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  position: center;
+}
+
+.celcius {
+  color: black;
+  font-size: 25px;
+  transition: all 200ms ease-in-out;
+}
+
+.celcius:hover {
+  cursor: pointer;
+  color: #9b9b9b;
+}
+
+.fahrenheit {
+  color: #9b9b9b;
+  font-size: 25px;
+  transition: all 200ms ease-in-out;
+}
+
+.fahrenheit:hover {
+  cursor: pointer;
+  color: black;
+}
+.actual-time {
+  font-size: 25px;
+}
+.actual-wind,
+.actual-humidity,
+.actual-precipitation {
+  font-size: 40px;
+}
+
+.main-temperature {
+  font-size: 75px;
+}

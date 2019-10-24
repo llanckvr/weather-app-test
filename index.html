@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Weather App</h1>
-  </body>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e7d23acc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="search-form">
+            <i class="fas fa-search "></i>
+            <input id="search-input" type="text" placeholder="Search" class="location-search" />
+        </form>
+        </br>
+        <div class="row">
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+                <small id="actual-time" class="actual-time"> MON 10:30 AM </small>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+        <h1 id="city-name"> Lisbon </h1>
+        <img class="sun-bridge" src="weather-image.svg">
+        <br>
+        <h2 class="main-temperature"> 20 <span class="celcius">ºC <span> </span><span class="fahrenheit">|ºF <span>
+        </h2>
+        <p> <span class="actual-coverage"> Clear </span>
+            <br>
+            <small class="temperature-feeling"> Feels like 18º </small>
+        </p>
+
+        <div class="row">
+            <div class="col-sm">
+                <i class="fas fa-tint actual-humidity"></i>
+                <br>
+                20%
+            </div>
+            <div class="col-sm">
+                <i class="fas fa-wind actual-wind"></i>
+                <br>
+                4 MPH
+                </p>
+            </div>
+            <div class="col-sm">
+                <i class="fas fa-cloud-showers-heavy actual-precipitation"></i>
+                <br>
+                0%
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"> </script>
+</body>
+
 </html>
