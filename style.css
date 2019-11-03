@@ -24,13 +24,13 @@ h1 {
   position: center;
 }
 
-.celcius {
+.celsius {
   color: black;
   font-size: 25px;
   transition: all 200ms ease-in-out;
 }
 
-.celcius:hover {
+.celsius:hover {
   cursor: pointer;
   color: #9b9b9b;
 }

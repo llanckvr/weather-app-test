@@ -5,6 +5,16 @@ function search(event) {
   city.innerHTML = searchInput.value;
 }
 
+function convertToCelsius() {
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = 24;
+}
+
+function convertToFahrenheit() {
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round((22 * 9) / 5 + 32);
+}
+
 let searchForm = document.querySelector("#search-form");
 console.log(searchForm);
 searchForm.addEventListener("submit", search);
@@ -17,3 +27,10 @@ let minutes = actualTime.getMinutes();
 let day = days[actualTime.getDay()];
 
 datePreview.innerHTML = day + " " + hours + ":" + minutes;
+
+let celsiuslink = document.querySelector("#celsius");
+celsiuslink.addEventListener("click", convertToCelsius);
+convertToCelsius();
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
