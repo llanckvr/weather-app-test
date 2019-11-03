@@ -27,24 +27,22 @@ h1 {
 .celsius {
   color: black;
   font-size: 25px;
-  transition: all 200ms ease-in-out;
-}
-
-.celsius:hover {
   cursor: pointer;
-  color: #9b9b9b;
+  transition: all 200ms ease-in-out;
 }
 
 .fahrenheit {
-  color: #9b9b9b;
+  color: black;
   font-size: 25px;
+  cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 
-.fahrenheit:hover {
-  cursor: pointer;
-  color: black;
+.active {
+  cursor: default;
+  color: #9b9b9b;
 }
+
 .actual-time {
   font-size: 25px;
 }

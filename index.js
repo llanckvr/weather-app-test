@@ -7,11 +7,19 @@ function search(event) {
 
 function convertToCelsius() {
   let temperature = document.querySelector("#temperature");
+  let link = document.querySelector("#celsius");
+  link.classList.add("active");
+  let fahrenheitLink = document.querySelector("#fahrenheit");
+  fahrenheitLink.classList.remove("active");
   temperature.innerHTML = 24;
 }
 
 function convertToFahrenheit() {
   let temperature = document.querySelector("#temperature");
+  let link = document.querySelector("#fahrenheit");
+  link.classList.add("active");
+  let celsiusLink = document.querySelector("#celsius");
+  celsiusLink.classList.remove("active");
   temperature.innerHTML = Math.round((22 * 9) / 5 + 32);
 }
 
