@@ -25,14 +25,14 @@ h1 {
 }
 
 .celsius {
-  color: black;
+  color: #9b9b9b;
   font-size: 25px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 
 .fahrenheit {
-  color: black;
+  color: #9b9b9b;
   font-size: 25px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -40,7 +40,7 @@ h1 {
 
 .active {
   cursor: default;
-  color: #9b9b9b;
+  color: black;
 }
 
 .actual-time {
