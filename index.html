@@ -10,6 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e7d23acc1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +18,7 @@
     <div class="container">
         <form id="search-form">
             <i class="fas fa-search "></i>
-            <input id="search-input" type="text" placeholder="Search" class="location-search" />
+            <input id="city-input" type="text" placeholder="Search" class="location-search" />
         </form>
         </br>
         <div class="row">
@@ -30,32 +31,31 @@
             <div class="col-sm">
             </div>
         </div>
-        <h1 id="city-name"> Lisbon </h1>
+        <h1 id="city-name"> - </h1>
         <img class="sun-bridge" src="weather-image.svg">
         <br>
-        <h2 class="main-temperature"> <span id="temperature" >20</span> <span id="celsius" class="celsius">ºC </span> <span id="fahrenheit" class="fahrenheit">|ºF <span>
+        <h2 class="main-temperature"> <span id="temperature" >-</span> <span id="celsius" class="celsius">ºC </span> <span id="fahrenheit" class="fahrenheit">|ºF <span>
         </h2>
-        <p> <span class="actual-coverage"> Clear </span>
-            <br>
-            <small class="temperature-feeling"> Feels like 18º </small>
+        <p> <span id="description" class="actual-coverage"> - </span>
+        
         </p>
 
         <div class="row">
             <div class="col-sm">
                 <i class="fas fa-tint actual-humidity"></i>
                 <br>
-                20%
+                <span id= "humidity"> - </span>
             </div>
             <div class="col-sm">
                 <i class="fas fa-wind actual-wind"></i>
                 <br>
-                4 MPH
+                <span id="wind">-</span>
                 </p>
             </div>
             <div class="col-sm">
                 <i class="fas fa-cloud-showers-heavy actual-precipitation"></i>
                 <br>
-                0%
+                <span id="rain"> - </span>
                 </p>
             </div>
         </div>
