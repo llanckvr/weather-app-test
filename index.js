@@ -12,6 +12,8 @@ function displayTemperature(response) {
   wind.innerHTML = `${response.data.wind.speed}m/s`;
   let rain = document.querySelector("#rain");
   rain.innerHTML = response.data.weather[0].main;
+
+  console.log(apiResponse);
 }
 
 function search(event) {
@@ -21,10 +23,12 @@ function search(event) {
   let city = document.querySelector("#city-name");
   city.innerHTML = cityInput.value;
 
-  //let url =
-  //"https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=7ef85d788990126f9a396a0335757858&units=metric";
-  let url =
-    "https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=7ef85d788990126f9a396a0335757858&units=metric";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=7ef85d788990126f9a396a0335757858&units=metric`;
+  // let url =
+  //   "https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=7ef85d788990126f9a396a0335757858&units=metric";
+
+  // const string = "hello `` ";
+  // const secondString = `hello ${username}`;
 
   // console.log("THIS IS MY CITY", cityInput.value);
   // console.log("THIS IS MY URL", url);
